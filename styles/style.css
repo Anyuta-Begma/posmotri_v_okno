@@ -20,8 +20,8 @@ html {
   --m-xxs: 5px;
   --m-xxxs: 1px;
 
-  --main-font: 'Fira Sans Condensed', sans-serif;
-  --second-font: 'Oswald', sans-serif;
+  --main-font: "Fira Sans Condensed", sans-serif;
+  --second-font: "Oswald", sans-serif;
 }
 
 .page {
@@ -193,7 +193,7 @@ ol {
 .search-form__textfield {
   width: 225px;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
   border: none;
   border-top: var(--m-xxxs) solid var(--white);
   border-bottom: var(--m-xxxs) solid var(--white);
@@ -203,6 +203,11 @@ ol {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+::-webkit-input-placeholder {
+  color: var(--white);
+  opacity: 0.7;
 }
 
 .search-form__textfield:active {
@@ -318,5 +323,6 @@ ol {
 }
 
 .more-button {
-  padding: var(--m-xs) 145px;
+  padding: 5px 146px;
+  margin: 2px;
 }
